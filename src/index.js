@@ -1,17 +1,16 @@
-
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 
 const getHomepageBanners = async () => {
-  try {
-    const url = `https://uat4.centrepointstores.com/landmarkshopscommercews/cache/v3/centrepointae/en/cmsPage/getCmsPage?pageId=centrepointae-Homepage&fields=OPTIMIZED&appId=IPHONE&userGrouphash=`
-    const response = await fetch(url);
-    const json = await response.json();
+  // try {
+  //   const url = `https://uat4.centrepointstores.com/landmarkshopscommercews/cache/v3/centrepointae/en/cmsPage/getCmsPage?pageId=centrepointae-Homepage&fields=OPTIMIZED&appId=IPHONE&userGrouphash=`
+  //   const response = await fetch(url);
+  //   const json = await response.json();
     
-    await appendBanners(json);
-  } catch(error) {
-    console.log(`We have a fetch error - ${error}`);
-  }
+  //   await appendBanners(json);
+  // } catch(error) {
+  //   console.log(`We have a fetch error - ${error}`);
+  // }
 }
 
 const appendBanners = json => {
