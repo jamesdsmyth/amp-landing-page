@@ -10,12 +10,20 @@
       padding-bottom: 25px;
       border-bottom: 1px solid #edeff1;
       margin-bottom: 25px;
+
+      &.padding {
+        padding: 10px;
+      }
+    }
+
+    .sub-section {
+      margin-bottom: 10px;
     }
   }
 
   .heading {
     text-transform: uppercase;
-    margin: 0 10px 10px;
+    margin: 0 0 10px;
     font-weight: 400;
   }
 }
