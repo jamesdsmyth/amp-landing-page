@@ -2,8 +2,6 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 
-// import "./scss/main.scss";
-
 const getHomepageBanners = async () => {
   try {
     const url = `https://uat4.centrepointstores.com/landmarkshopscommercews/cache/v3/centrepointae/en/cmsPage/getCmsPage?pageId=centrepointae-Homepage&fields=OPTIMIZED&appId=IPHONE&userGrouphash=`
@@ -23,13 +21,15 @@ const appendBanners = json => {
 
   const bannersArr = slot[0].components[0].rotatingImagesData;
   const bannersMapped = bannersArr.map(item => {
-    return `<amp-img src="${item.medias[0].url}" height="677" width="750"></amp-img>`
+    return `<amp-img src="${item.medias[0].url}" height="677" width="750"></amp-img>`;
   });
 
   const div = document.getElementById('carousel-container');
 
   const ampCarousel = document.createElement('amp-carousel');
   ampCarousel.setAttribute('class', 'amp-carousel');
+  ampCarousel.setAttribute('layout', 'responsive');
+  
 
   ampCarousel.innerHTML = bannersMapped.join(' ');
 
