@@ -25,7 +25,6 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href=".">
-
     <style amp-custom>
         .amp-page {
         font-family: arial;
@@ -275,6 +274,30 @@
                             height="64" 
                             src="{{medias.0.url}}"></amp-img>
                     {{/trendingBanners}}
+                </template>
+            </amp-list>
+        </section>
+        <section class="section padding">
+            <h2 class="heading">
+                Men's fashion
+            </h2>
+            <amp-list 
+                layout="fixed-height"
+                height="351"
+                items="slots.10.components"
+                src="https://www.centrepointstores.com/landmarkshopscommercews/cache/v3/centrepointae/en/cmsPage/getCmsPage?pageId=centrepointae-Homepage&fields=OPTIMIZED&appId=IPHONE&userGrouphash=">
+                <template type="amp-mustache">
+                    <amp-carousel 
+                        height="351" 
+                        layout="fixed-height" 
+                        type="carousel">
+                        {{#trendingBanners}}
+                            <amp-img
+                                width="287" 
+                                height="351" 
+                                src="{{medias.0.url}}"></amp-img>
+                        {{/trendingBanners}}
+                    </amp-carousel>
                 </template>
             </amp-list>
         </section>
