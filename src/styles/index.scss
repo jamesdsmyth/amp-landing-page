@@ -3,6 +3,21 @@
   font-size: 14px;
   color: #1f2123;
 
+  .header {
+    .search-input {
+      height: 35px;
+      font-size: 13px;
+      width: 375px;
+      border-color: #b2b6b9;
+      background: #fff;
+      color: #3d464d;
+      box-shadow: none;
+      border: 1px solid #dddfe2;
+      border-radius: 2px;
+      line-height: 1.24;
+    }
+  }
+
   .main {
     display: grid;
 
